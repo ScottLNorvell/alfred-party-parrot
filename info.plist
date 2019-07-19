@@ -2,19 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>name</key>
-	<string>scotts-awesome-wf</string>
 	<key>bundleid</key>
 	<string>com.scottlnorvell.scotts-awesome-wf</string>
 	<key>category</key>
-	<string>Uncategorised</string>
+	<string>Internet</string>
 	<key>connections</key>
 	<dict>
 		<key>4D79DC1F-5E26-4C77-9EF6-17FB13799342</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6A0098AB-959E-4107-B5D6-B21B51F26D7E</string>
+				<string>79CC3A57-FB15-4105-BDAF-1817A31143C4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>674B58AD-9E67-4D01-93D9-0A82211DE0A2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>79CC3A57-FB15-4105-BDAF-1817A31143C4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -24,40 +35,31 @@
 			</dict>
 		</array>
 	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string></string>
 	<key>disabled</key>
 	<false/>
+	<key>name</key>
+	<string>Party Parrot</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>6A0098AB-959E-4107-B5D6-B21B51F26D7E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>swf</string>
+				<string>pu</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -77,7 +79,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Scotts Awesome Workflow</string>
+				<string>Get Parrot URL</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -90,18 +92,75 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>79CC3A57-FB15-4105-BDAF-1817A31143C4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>pgh</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node gh.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Get Parrot Markdown</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>674B58AD-9E67-4D01-93D9-0A82211DE0A2</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>6A0098AB-959E-4107-B5D6-B21B51F26D7E</key>
-		<dict>
-			<key>xpos</key>
-			<integer>150</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
 		<key>4D79DC1F-5E26-4C77-9EF6-17FB13799342</key>
 		<dict>
 			<key>xpos</key>
@@ -109,6 +168,22 @@
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
+		<key>674B58AD-9E67-4D01-93D9-0A82211DE0A2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+		<key>79CC3A57-FB15-4105-BDAF-1817A31143C4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>290</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
 	</dict>
+	<key>webaddress</key>
+	<string></string>
 </dict>
 </plist>
