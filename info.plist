@@ -8,11 +8,37 @@
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
+		<key>0D70FABA-437C-4C13-9F9E-01A0B0B0A66D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E28D08CB-12BC-409E-9B90-5B7285933B27</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4D79DC1F-5E26-4C77-9EF6-17FB13799342</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>79CC3A57-FB15-4105-BDAF-1817A31143C4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>52077BFD-33C4-4A1E-9086-6074132C33CF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0D70FABA-437C-4C13-9F9E-01A0B0B0A66D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -52,6 +78,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -90,7 +118,7 @@
 			<key>uid</key>
 			<string>4D79DC1F-5E26-4C77-9EF6-17FB13799342</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -107,7 +135,7 @@
 			<key>uid</key>
 			<string>79CC3A57-FB15-4105-BDAF-1817A31143C4</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -116,6 +144,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -154,19 +184,102 @@
 			<key>uid</key>
 			<string>674B58AD-9E67-4D01-93D9-0A82211DE0A2</string>
 			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>make update-parrots</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0D70FABA-437C-4C13-9F9E-01A0B0B0A66D</string>
+			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>largetypetext</key>
+				<string>DONE!</string>
+				<key>textcolor</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>E28D08CB-12BC-409E-9B90-5B7285933B27</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>pupdate</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Update Parrots</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>52077BFD-33C4-4A1E-9086-6074132C33CF</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>0D70FABA-437C-4C13-9F9E-01A0B0B0A66D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>275</integer>
+		</dict>
 		<key>4D79DC1F-5E26-4C77-9EF6-17FB13799342</key>
 		<dict>
 			<key>xpos</key>
 			<integer>10</integer>
 			<key>ypos</key>
 			<integer>10</integer>
+		</dict>
+		<key>52077BFD-33C4-4A1E-9086-6074132C33CF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>295</integer>
 		</dict>
 		<key>674B58AD-9E67-4D01-93D9-0A82211DE0A2</key>
 		<dict>
@@ -181,6 +294,13 @@
 			<integer>290</integer>
 			<key>ypos</key>
 			<integer>10</integer>
+		</dict>
+		<key>E28D08CB-12BC-409E-9B90-5B7285933B27</key>
+		<dict>
+			<key>xpos</key>
+			<integer>420</integer>
+			<key>ypos</key>
+			<integer>275</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
