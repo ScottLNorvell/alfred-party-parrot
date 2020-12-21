@@ -4,8 +4,8 @@ update-parrots:
 	cp -r tmp/cultofthepartyparrot.com/parrots .
 	cp -r tmp/cultofthepartyparrot.com/guests .
 	cp -r tmp/cultofthepartyparrot.com/flags .
-	cp tmp/cultofthepartyparrot.com/parrots.json .
-	cp tmp/cultofthepartyparrot.com/guests.json .
-	cp tmp/cultofthepartyparrot.com/flags.json .
+	cp tmp/cultofthepartyparrot.com/parrots.yaml .
+	cp tmp/cultofthepartyparrot.com/guests.yaml .
+	cp tmp/cultofthepartyparrot.com/flags.yaml .
 	rm -rf tmp
 .PHONY: update-parrots
